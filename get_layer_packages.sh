@@ -2,8 +2,8 @@
 
 rm -r python/
 
-IMAGE_NAME=${1:-"lambci/lambda:build-python3.6"}
-PACKAGES_PATH=${2:-"python/lib/python3.6/site-packages"}
+IMAGE_NAME=${1:-"lambci/lambda:build-python3.8"}
+PACKAGES_PATH=${2:-"python/lib/python3.8/site-packages"}
 
 CONTAINER_ID=$(docker create \
         --volume $PWD/requirements.txt:/src/requirements.txt \
